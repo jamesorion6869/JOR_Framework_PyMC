@@ -85,3 +85,9 @@ python jor_pymc_runner.py
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT)
+
+## Citation / DOI
+
+If you use this repository or its datasets in your research, please cite the Zenodo release:
+
+James Orion Report (JOR) Framework PyMC Dataset, Zenodo, DOI: [10.5281/zenodo.18157347](https://doi.org/10.5281/zenodo.18157347)
