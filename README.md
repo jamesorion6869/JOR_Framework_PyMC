@@ -9,6 +9,14 @@ This repository contains scripts to calculate **SOP**, **NHP**, and posterior pr
 
 ---
 
+## Framework Intent
+
+The JOR Framework is a probabilistic evidence model designed to constrain interpretation of UAP cases, not to assume or promote specific specific conclusion.
+
+SOP (Solid Object Probability) establishes the evidentiary foundation, and NHP (Non-Human Probability) is conditionally dependent on that foundation. This structure prevents overclassification and limits non-human attribution in the absence of sufficient supporting evidence.
+
+The model is intended for analytical use in evaluating case data under uncertainty, with an emphasis on evidence weighting and controlled inference.
+
 ## Workflow Overview
 
 1. Run `jor_fusion.py` → generates `jor_scores.csv` with SOP/NHP for each case  
