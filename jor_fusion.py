@@ -91,9 +91,9 @@ C_hard_caps = {
 }
 
 E_base_scores = {
-    "Weak": "0.30-0.45: Fog, heavy cloud, night, brief duration (<10s)",
-    "Moderate": "0.50-0.60: Partial obstruction, moderate duration",
-    "Strong": "0.65-0.85: Clear sky OR controlled environment; long duration"
+    "Weak": "0.30-0.45: Fog, heavy cloud, night with no illumination, brief duration (<10s)",
+    "Moderate": "0.50-0.60: Light cloud, partially obstructed view, nighttime with some illumination, moderate duration (10-30s)",
+    "Strong": "0.65-0.85: Clear sky OR controlled environment; multiple viewing angles, long duration (>30s)"
 }
 
 E_modifiers = {
@@ -105,7 +105,8 @@ E_modifiers = {
 
 E_hard_caps = {
     "Heavy fog": 0.40,
-    "Nighttime single perspective": 0.70
+    "Nighttime single perspective": 0.70,
+    "Daytime clear": 0.60 
 }
 
 P_base_scores = {
@@ -169,7 +170,10 @@ def score_factor(base_scores, modifiers, hard_caps, name):
             score += val
     for cap, cap_val in hard_caps.items():
         if yes_no(f"Apply hard cap rule '{cap}'?"):
-            score = min(score, cap_val)
+            if cap == "Daytime clear":
+                score = max(score, cap_val)   # enforce minimum for daytime clear
+            else:
+                score = min(score, cap_val)   # enforce maximum for other caps
     return round(score, 2)
 
 def choose_flight_category(prompt, options, descriptors):
