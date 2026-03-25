@@ -105,7 +105,7 @@ E_modifiers = {
 
 E_hard_caps = {
     "Heavy fog": 0.40,
-    "Nighttime single perspective": 0.70,
+    "Nighttime OR Single perspective": 0.70,
     "Daytime clear": 0.60 
 }
 
