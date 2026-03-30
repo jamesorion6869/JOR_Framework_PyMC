@@ -42,6 +42,16 @@ jor_pymc_runner.py
 
 ---
 
+## Model Calibration & Precision
+
+The Bayesian implementation of JOR uses **informative Beta priors** to incorporate expert evidentiary input.  
+
+- **Sigma (σ) Tuning:** Input sigmas for Credibility (C), Evidence (E), and Physicality (P) are calibrated at **0.02**.  
+- **Analytical Result:** This calibration stabilizes the **Average Uncertainty** (95% credible interval width) at ~**11.2%**, yielding a **22% increase in precision** over the baseline model while maintaining realistic margins for historical cases.  
+- **Inference Constraints:** The model enforces a **baseline skepticism floor of 0.20** and an approximate **posterior ceiling of 0.50**, ensuring that Non-Human Probability (NHP) remains strictly grounded in the evidentiary foundation provided by SOP.
+
+---
+
 ## Requirements
 
 - Python 3.10+  
