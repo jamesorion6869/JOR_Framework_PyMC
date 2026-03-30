@@ -29,9 +29,9 @@ def run_jor_pymc_safe(data, draws=1000, tune=1000, chains=4, cores=4, target_acc
     num_cases = len(df)
 
     # Pre-calculate Beta parameters for the priors
-    c_a, c_b = calc_beta_params_vec(c_scores, 0.05)
-    e_a, e_b = calc_beta_params_vec(e_scores, 0.05)
-    p_a, p_b = calc_beta_params_vec(p_scores, 0.05)
+    c_a, c_b = calc_beta_params_vec(c_scores, 0.02)
+    e_a, e_b = calc_beta_params_vec(e_scores, 0.02)
+    p_a, p_b = calc_beta_params_vec(p_scores, 0.02)
     prior_a, prior_b = calc_beta_params_vec(PRIOR_NH_MU, 0.02)
 
     with pm.Model() as model:
