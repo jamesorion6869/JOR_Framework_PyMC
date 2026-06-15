@@ -108,4 +108,4 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 If you use this repository or its datasets in your research, please cite the Zenodo release:
 
-James Orion Report (JOR) Framework PyMC Dataset, Zenodo, DOI: [10.5281/zenodo.18157347](https://doi.org/10.5281/zenodo.18157347)
+James Orion Report (JOR) Framework PyMC Dataset, Zenodo, DOI: [10.5281/zenodo.18088931](https://doi.org/10.5281/zenodo.18088931)
