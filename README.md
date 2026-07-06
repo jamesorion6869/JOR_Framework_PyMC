@@ -1,5 +1,9 @@
 # JOR-Framework-PyMC
 
+![Status](https://img.shields.io/badge/Status-Research_%2F_Legacy-orange.svg)  
+**Version:** [3.0]
+
+
 PyMC implementation of the **James Orion Report (JOR) Framework** for UAP case analysis.  
 This repository contains scripts to calculate **SOP**, **NHP**, and posterior probabilities for JOR Framework v3 cases using Bayesian methods.
 
