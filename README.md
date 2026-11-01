@@ -106,7 +106,7 @@ python jor_pymc_runner.py
 
 ## License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT)
+[MIT](LICENSE) — Copyright (c) 2026 Jake James
 
 ## Citation / DOI
 
